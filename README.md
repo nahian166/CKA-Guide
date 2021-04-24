@@ -45,15 +45,21 @@ Pod definitation file:
 nodeAffinity Properties:
 available:
 1. **requiredDuringSchedulingIgnoredDuringExecution**:
+
 DuringScheduling = POd doesn't exist yet,
+
 requiredDuringScheduling= if no label found >> the pod will not be placed (crucial case)
+
 IgnoredDuringExecution = if change the label >> Pod will continue to run
 
 2. **preferredDuringSchedulingIgnodedDuringExecution**
+
 preferredDuringScheduling= if no label found>> still place the pod (less important)
 
 planned:
+
 3. **requiredDuringSchedulingRequiredDuringExecution**
+
 RequiredDuringExecution= If label is removed >> the pod will be evicted. 
 
 
